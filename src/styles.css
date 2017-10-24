@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+.span12{
+    padding: 2px;
+    margin: 0px;
+    border-bottom: 1px solid #eee;
+    color: white;
+    background: #43c147;
+    font-weight: bold;
+}
+.margin5{
+    margin: 5px 0px 5px 0px;
+
+}
+.borderLeft{
+    border-left: 1px solid #fff;
+    border-radius: 0px;
+    color:black;
+}
+.round{
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    width: 20px;
+    min-height: 20px;
+    margin: 15px 20px 5px 20px;
+    background: red;
+}
+.floatLeft{
+    float: left;
+}
+.background_gray{
+    background: #e4e4e4;
+}
+.center{
+    text-align: center;
+}
+.fontSize7{
+    font-size: .7em;
+}
+.max-width{
+    max-width: 300px;
+}
+.no-padding{
+    padding: 0px;
+}
+.paddingLeft10{
+    padding:10px;
+}
+.padding5{
+    padding: 5px;
+}
+.marginTop5{
+    margin-top: 5px;
+}
+.margin10{
+    margin: 10px;
+}
+.width{
+    width:100%;
+}
+.progress{
+    height: 10px;
+    margin: 10px 0px 0px 0px
+}
+.border-bottom{
+    border-bottom: 4px solid #c1c1c1;
+}
+.borderLight{
+    border-bottom: 2px solid #868686;
+}
+.divList{
+    border-top: 1px solid black;
+}
+.paddingLeft10 > .divList:last-child{
+    border-bottom:  1px solid black;
+}
+.paddingTop5{
+    padding-top: 5px;
+}
+.marginButtom10{
+    margin-bottom: 10px;
+}
+.btn,.form-control{
+    border-radius: 0px;
+}
+.dropdown .btn{
+    text-align: left;
+}
+.no-padding-right{
+    padding-right: 0px;
+}
+.padding1010{
+    padding: 10px 0px 10px 0px;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #ffffff;
+    border-color: #fdfdfd;
+}
