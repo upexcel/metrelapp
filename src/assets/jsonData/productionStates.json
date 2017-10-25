@@ -1,31 +1,27 @@
 {
-"STATUSBAR": {
-"LEISTUNG": [
-"BB; ST; START 88 \"Power\"\rBB; ST; PARAMETER 69 = Off \"Duration\"\rBB;
-ST; LIMIT 52 = Off \"H Limit\"\rBB; ST; LIMIT 51 = Off \"L Limit\"\r", "BB; ST; RESULT 78 = 37 W
-\"P\"\rBB; ST; RESULT 79 = 1 VA \"S\"\rBB; ST; RESULT 80 = 1 VAr \"Q\"\rBB; ST; RESULT 81 = 0.15c
-\"PF\"\rBB; ST; RESULT 82 = 1.7 Percent \"THDu\"\rBB; ST; RESULT 85 = 65.2 Percent \"THDi\"\rBB;
-ST; RESULT 241 = <0.00c \"CosÎ¦\"\rBB; ST; RESULT 158 = 234 V \"U\"\rBB; ST; RESULT 159 = 0.00 A
-\"I\"\rBB; ST; STATUS = none\rBB; ST; END\r\r"
-],
-"DURCHGANG 1": [
-"BB; ST; START 80 \"Continuity\"\rBB; ST; PARAMETER 119 = 4 wire
-\"Output\"\rBB; ST; PARAMETER 66 = 10 A \"I out\"\rBB; ST; PARAMETER 248 = Off \"Î”U test\"\rBB;
-ST; PARAMETER 69 = 2 s \"Duration\"\rBB; ST; LIMIT 43 = 0.5 Ohm \"H Limit\"\rBB; ST; LIMIT 44 =
-0.01 Ohm \"L Limit\"\r", "BB; ST; RESULT 135 = >999 Ohm \"R\"; STATUS 135 = fail\rBB; ST; STATUS =
-pass\rBB; ST; END\r\rBB; AT; STEP_END_DECISION\r\r"
-],
-"DURCHGANG 2": [
-"BB; ST; START 80 \"Continuity\"\rBB; ST; PARAMETER 119 = 4 wire
-\"Output\"\rBB; ST; PARAMETER 66 = 10 A \"I out\"\rBB; ST; PARAMETER 248 = Off \"Î”U test\"\rBB;
-ST; PARAMETER 69 = 2 s \"Duration\"\rBB; ST; LIMIT 43 = 0.5 Ohm \"H Limit\"\rBB; ST; LIMIT 44 =
-0.01 Ohm \"L Limit\"\r", "BB; ST; RESULT 135 = >999 Ohm \"R\"; STATUS 135 = fail\rBB; ST; STATUS =
-pass\rBB; ST; END\r\rBB; AT; STEP_END_DECISION\r\r"
-]
-},
-"ADDITIONINFO": {
-"SERIENNUMMER": 10032540,
-"LEISTUNG": 29,
-"KELVIN": 4172
-}
+    "STATUSBAR": {
+        "LEISTUNG": [
+            "START 88<<Power>>", " PARAMETER 69 = Off ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " RESULT 78 = 37 W", " RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "DURCHGANG 1": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+
+        ],
+        "DURCHGANG 2": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "HV": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "VISION": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ]
+    },
+    "ADDITIONINFO": {
+        "SERIENNUMMER": 10032540,
+        "LEISTUNG": 29,
+        "KELVIN": 4172,
+        "LUX": 23190,
+        "XYZ": "22310/23190/13460"
+    }
 }

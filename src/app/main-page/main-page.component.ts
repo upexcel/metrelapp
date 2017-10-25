@@ -9,21 +9,35 @@ import forEach from 'lodash/forEach';
 export class MainPageComponent implements OnInit {
     states = [];
     config = [];
-    program =[];
+    program = [];
+    productionState = {};
+    prodStatesData: any;
     constructor(public _apiService: ApiServiceService) {}
     ngOnInit() {
-        let path = '../assets/jsonData/productionStates.json'
-        this._apiService.apiCall(path).subscribe((res) => {}, (error) => {})
-        this._apiService.apiCall('../assets/jsonData/states.json').subscribe((res) => {
+        this._apiService.apiCall('productionStates.json').subscribe((res) => {
+            forEach(res, (val, keyData) => {
+                if (!this.productionState[keyData]) {
+                    this.productionState[keyData] = [];
+                }
+                forEach(val, (value, key) => {
+                    this.productionState[keyData].push({
+                        'key': key,
+                        'value': value
+                    })
+                })
+                this.prodStatesData = this.productionState["STATUSBAR"][0].value;
+            })
+        }, (error) => {})
+        this._apiService.apiCall('states.json').subscribe((res) => {
             forEach(res.data, (value, key) => {
                 this.states.push({
                     'key': key,
                     'value': value,
-                    'background':(value=='READY')?'green':'red'
+                    'background': (value == 'READY') ? '#7ece4b' : 'red'
                 })
             })
         }, (error) => {})
-        this._apiService.apiCall('../assets/jsonData/config.json').subscribe((res) => {
+        this._apiService.apiCall('config.json').subscribe((res) => {
             forEach(res, (value, key) => {
                 this.config.push({
                     'key': key,
@@ -31,14 +45,31 @@ export class MainPageComponent implements OnInit {
                 })
             })
         }, (error) => {})
-        this._apiService.apiCall('../assets/jsonData/program.json').subscribe((res) => {
+        this._apiService.apiCall('program.json').subscribe((res) => {
+            let count = 0;
+            let data = [];
             forEach(res, (value, key) => {
-                this.program.push({
-                    'key': key,
-                    'value': value
-                })
+                count++;
+                if (count % 3 != 0) {
+                    data.push({
+                        'key': key,
+                        'value': value,
+                        'val': (count % 3 == 0) ? 1 : 0
+                    })
+                } else {
+                    data.push({
+                        'key': key,
+                        'value': value,
+                        'val': (count % 3 == 0) ? 1 : 0
+                    })
+                    this.program.push(data);
+                    data = [];
+                }
             })
         }, (error) => {})
     }
-
+    changeMetrel(prodStatesData) {
+        this.prodStatesData = prodStatesData;
+    }
 }
+

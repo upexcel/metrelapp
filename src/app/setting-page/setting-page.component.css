@@ -1,0 +1,34 @@
+input{
+    font-weight: normal;
+}
+.padding10{
+    padding: 10px;
+}
+.inputSetting{
+    width: 70%
+}
+.width50{
+    width: 50px;
+}
+th{
+    font-size: 11px;
+}
+.paddingTop16{
+    padding-top: 16px;
+}
+.marginTop16{
+    margin-top: 16px;
+}
+.margin165165{
+    margin:16px 5px 16px 5px
+}
+.padding510p2020{
+    padding: 5px 10px 20px 20px;
+}
+h1{
+    font-weight: bold;
+    line-height: 1.5;
+}
+.paddingLeft0{
+    padding-left: 0px;
+}
