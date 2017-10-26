@@ -21,7 +21,7 @@ h5{
     margin: 0px;
     border-bottom: 1px solid #eee;
     color: white;
-    background: #7ece4b;
+    background: #62d24e;
     font-weight: bold;
 }
 .margin5{
@@ -37,19 +37,22 @@ h5{
 .border-bottomLight{
     border-bottom: 1px solid black;
 }
+.margin-left{
+    margin-left: -10px;
+}
 .round{
     border: 1px solid #ececec;
     border-radius: 50%;
-    width: 30px;
-    min-height: 30px;
-    margin: 15px 25px 5px 25px;
+    width: 35px;
+    min-height: 35px;
+    margin: 15px 30px 5px 30px;
     background: red;
 }
 .floatLeft{
     float: left;
 }
 .background_gray{
-    background: #e6e6e6;
+    background: #d1d8d9;
 }
 .center{
     text-align: center;
@@ -57,8 +60,17 @@ h5{
 .fontSize7{
     font-size: .7em;
 }
+.fontSize12{
+    font-size: 11px;
+    color:#444;
+}
+small {
+    font-size: 80% !important;
+    font-weight: 100;
+    color:#444;
+}
 .max-width{
-    max-width: 300px;
+    max-width: 372px;
 }
 .no-padding{
     padding: 0px;
@@ -67,8 +79,14 @@ h5{
     float: right;
 }
 .paddingLeft10{
-    padding:10px;
+    padding-left: 0px;
+    padding-right: 35px;
+    float: right;
 }
+.paddingLeft20{
+    padding:20px;
+}
+
 .padding5{
     padding: 5px;
 }
@@ -79,37 +97,41 @@ h5{
     margin: 10px;
 }
 .width{
-    width:100%;
+    width:100% !important;
 }
 .progress{
     height: 8px;
     margin: 15px 0px 0px 0px;
+    border-radius: 0px;
 }
 .progress-bar-success {
-    background-color: #7ece4b;
+    background-color: #62d24e;
 }
 .width49{
     width: 49%;
 }
 .width30{
-    width: 20%;
+    width: 25%;
     word-break: break-all;
 }
 .width40{
-    width: 30%;
+    width: 34%;
     word-break: break-all;
     margin-left:15px;
 }
 .paddingTable{
-    padding:0px 10px 0px 0px;
+    max-width: 63px;
 }
 .btn-success {
     color: #fff;
-    background-color: #7ece4b;
+    background-color: #62d24e;
     border-color: #7ece4b;
 }
 .fontSize11{
     font-size: 11px;
+}
+.font-weigth{
+    font-weight: normal !important;
 }
 .btn-success:hover {
     color: #fff;
@@ -170,19 +192,59 @@ hr{
 .margin-bottom label{
     margin-bottom: 0px;
 }
-@media only screen and (max-width: 1000px) {
+.width27{
+    width: 27%;
+}
+.fontSize8{
+    font-size: 8px;
+}
+.form .form-control {
+    width: 90%;
+    height: 26px;
+}
+.width100 {
+    width: 100%;
+    max-width: 46% !important;
+}
+@media only screen and (max-width: 1060px){
     .btnn{
-        font-size: 11px;
+        font-size: 10px;
     }
     h1{
         font-size: 25px;
     }
+    .width27{
+        width: 32.5% !important;
+    }
+    .paddingLeft10{
+        padding-right: 21px !important;
+    }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 765px) {
     h1{
         font-size: 25px;
     }
     .btnn {
         font-size: 9px;
+    }
+    .width27{
+        width: 100% !important;
+    }
+    .width100 {
+        max-width: 50% !important;
+    }
+}
+/*@media only screen and (min-width: 1070px) {
+    .width27{
+        width: 27.5% !important;
+    }
+    .btnn {
+        font-size: 11px;
+
+    }
+}*/
+@media (min-width: 992px){
+    .btnn {
+        font-size: 11px;
     }
 }

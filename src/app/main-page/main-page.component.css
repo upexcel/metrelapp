@@ -1,8 +1,13 @@
 .input{
     max-width: 33.3%;
+    /*height: 25px;*/
 }
 .font10{
-    font-size: 9px;
+    font-size: 10px;
+    font-weight: normal;
+}
+.color{
+    color: #3e3e3e;
 }
 .padding55{
     padding: 0px 0px 0px 5px;
@@ -23,7 +28,7 @@ select{
     margin-top: 16px;
 }
 .padding510p1020{
-    padding: 5px 10px 20px 20px;
+    padding: 5px 10px 10px 20px;
 }
 .paddingBottom10{
     padding-bottom: 10px;
