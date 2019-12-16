@@ -1,0 +1,27 @@
+{
+    "STATUSBAR": {
+        "LEISTUNG": [
+            "START 88<<Power>>", " PARAMETER 69 = Off ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " RESULT 78 = 37 W", " RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "DURCHGANG 1": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+
+        ],
+        "DURCHGANG 2": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "HV": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ],
+        "VISION": [
+            "START 80<<Continuity>>", " PARAMETER 119 = 4 ", "Duration", " LIMIT 52 = Off ", " LIMIT 51 = Off ", " PARAMETER 248 = Off ", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "RESULT 78 = 37 W", "STATUS", "END"
+        ]
+    },
+    "ADDITIONINFO": {
+        "SERIENNUMMER": 10032540,
+        "LEISTUNG": 29,
+        "KELVIN": 4172,
+        "LUX": 23190,
+        "XYZ": "22310/23190/13460"
+    }
+}

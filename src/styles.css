@@ -1,1 +1,250 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+body{
+    font-family: 'Roboto', sans-serif !important;
+    letter-spacing: 1px;
+    color:black;
+    font-weight: bold !important;
+}
+h5{
+    font-weight: bold;
+}
+.btn-group-justified > .btn{
+    color: #6d6c6c;
+    font-weight: bold;
+}
+.row{
+    color: #6d6c6c;
+}
+.span12{
+    padding: 2px;
+    margin: 0px;
+    border-bottom: 1px solid #eee;
+    color: white;
+    background: #62d24e;
+    font-weight: bold;
+}
+.margin5{
+    margin: 5px 0px 5px 0px;
+
+}
+
+.borderLeft{
+    border-left: 2px solid #fff;
+    border-radius: 0px;
+    color:black;
+}
+.border-bottomLight{
+    border-bottom: 1px solid black;
+}
+.margin-left{
+    margin-left: -10px;
+}
+.round{
+    border: 1px solid #ececec;
+    border-radius: 50%;
+    width: 35px;
+    min-height: 35px;
+    margin: 15px 30px 5px 30px;
+    background: red;
+}
+.floatLeft{
+    float: left;
+}
+.background_gray{
+    background: #d1d8d9;
+}
+.center{
+    text-align: center;
+}
+.fontSize7{
+    font-size: .7em;
+}
+.fontSize12{
+    font-size: 11px;
+    color:#444;
+}
+small {
+    font-size: 80% !important;
+    font-weight: 100;
+    color:#444;
+}
+.max-width{
+    max-width: 372px;
+}
+.no-padding{
+    padding: 0px;
+}
+.floatRight{
+    float: right;
+}
+.paddingLeft10{
+    padding-left: 0px;
+    padding-right: 35px;
+    float: right;
+}
+.paddingLeft20{
+    padding:20px;
+}
+
+.padding5{
+    padding: 5px;
+}
+.marginTop5{
+    margin-top: 5px;
+}
+.margin10{
+    margin: 10px;
+}
+.width{
+    width:100% !important;
+}
+.progress{
+    height: 8px;
+    margin: 15px 0px 0px 0px;
+    border-radius: 0px;
+}
+.progress-bar-success {
+    background-color: #62d24e;
+}
+.width49{
+    width: 49%;
+}
+.width30{
+    width: 25%;
+    word-break: break-all;
+}
+.width40{
+    width: 34%;
+    word-break: break-all;
+    margin-left:15px;
+}
+.paddingTable{
+    max-width: 63px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #62d24e;
+    border-color: #7ece4b;
+}
+.fontSize11{
+    font-size: 11px;
+}
+.font-weigth{
+    font-weight: normal !important;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #89d25b;
+    border-color: #89d25b;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #868686;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.borderLight{
+    border-bottom: 2px solid #868686;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+hr{
+    border-bottom: 2px solid #868686;
+    margin: 0px;
+}
+.divList{
+    border-top: 1px solid black;
+}
+.paddingLeft10 > .divList:last-child{
+    border-bottom:  1px solid black;
+}
+.paddingTop5{
+    padding-top: 5px;
+}
+.marginButtom10{
+    margin-bottom: 10px;
+}
+.btn,.form-control{
+    border-radius: 0px;
+}
+.form-control{
+    font-size: 10px;
+}
+.dropdown .btn{
+    text-align: left;
+}
+.no-padding-right{
+    padding-right: 0px;
+}
+.padding1010{
+    padding: 10px 0px 10px 0px;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #ffffff;
+    border-color: #fdfdfd;
+}
+.imgSetting{
+    margin-left: -28px;
+
+}
+.margin-bottom label{
+    margin-bottom: 0px;
+}
+.width27{
+    width: 27%;
+}
+.fontSize8{
+    font-size: 8px;
+}
+.form .form-control {
+    width: 90%;
+    height: 26px;
+}
+.width100 {
+    width: 100%;
+    max-width: 46% !important;
+}
+@media only screen and (max-width: 1060px){
+    .btnn{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .width27{
+        width: 32.5% !important;
+    }
+    .paddingLeft10{
+        padding-right: 21px !important;
+    }
+}
+@media only screen and (max-width: 765px) {
+    h1{
+        font-size: 25px;
+    }
+    .btnn {
+        font-size: 9px;
+    }
+    .width27{
+        width: 100% !important;
+    }
+    .width100 {
+        max-width: 50% !important;
+    }
+}
+/*@media only screen and (min-width: 1070px) {
+    .width27{
+        width: 27.5% !important;
+    }
+    .btnn {
+        font-size: 11px;
+
+    }
+}*/
+@media (min-width: 992px){
+    .btnn {
+        font-size: 11px;
+    }
+}

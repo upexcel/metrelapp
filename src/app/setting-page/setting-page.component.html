@@ -1,0 +1,100 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="width57  col-sm-6 col-xs-12">
+            <div class="margin10 paddLeft20px">
+                <div class="padding10">
+                    <h1>
+                        PROGRAMM PARAMTER
+                    </h1>
+                    <div class="paddingTop5">
+
+                        <div class="form-group">
+                            <strong>
+                                PROGRAMMNAME
+                            </strong>
+                            <input type="text" class="font20 form-control inputSetting background_gray" value="TEST1">
+                        </div>    
+                        <div>
+
+                            <table  class="paddingTop5 width">
+                                <colgroup>
+                                    <col span="1"  style='width:15%;'>
+                                    <col span="1" style='width:45%;'>
+                                    <col span="1" style='width:25%;'>
+                                    <col span="2" style='width:15%;'>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="tableCollpadding no-padding-left font18">
+                                            <strong>
+                                                NR   
+                                            </strong>  
+                                        </th>
+                                        <th class="tableCollpadding font18">
+                                            <strong>
+                                                NAME 
+                                            </strong>  
+                                        </th>
+                                        <th class="tableCollpadding font18">
+                                            <strong>
+                                                WERT   
+                                            </strong>  
+                                        </th>
+                                        <th class="tableCollpadding font18">
+
+                                        </th>
+                                        <th class="tableCollpadding">
+
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let pro of program">
+                                        <td class="tableCollpadding no-padding-left">
+                                            <input type="text" class="form-control background_gray font20 center" value="1" >
+                                        </td>
+                                        <td class="tableCollpadding">
+                                            <input type="text" class="form-control background_gray font20" [value]="pro.key">
+                                        </td>
+                                        <td class="tableCollpadding">
+                                            <input type="text" class="form-control background_gray font20" [value]="pro.value">
+                                        </td>
+                                        <td class="tableCollpadding">
+                                            <button type="button" class="btn btn-success bt width padd3">SAVE</button>
+                                        </td>
+                                        <td class="tableCollpadding">
+                                            <button type="button" class="btn btn-danger bt width padd3">Delete</button>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <div class="margin165165 width">
+                                                <button type="button" class="btn-lg btn btn-success height bt ">SAVE</button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="width47  col-sm-6 col-xs-12 paddingLeft0 paddRight0">
+            <div class="mar background_gray padding510p2020">
+                <div *ngIf="configServer">
+                    <h1>
+                        SPEICHERORT
+                    </h1>
+                    <div class="paddingTop16" *ngFor="let server of configServer">
+                         <strong>
+                            {{server.key}}
+                        </strong>
+                        <input type="text" class="form-control font20 " value="{{server.value}}">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-lg btn-success width bt marginTop16 height">SAVE</button>
+            </div>
+        </div>
+    </div>
